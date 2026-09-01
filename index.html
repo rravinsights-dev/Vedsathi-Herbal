@@ -33,28 +33,50 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     body {
-      background-color: #090d16;
-      color: #f8fafc;
+      background-color: #f1f5f9;
+      color: #1e293b;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       padding: 10px;
     }
     .container {
-      background: #0f172a;
+      background: #ffffff;
       max-width: 480px;
       width: 100%;
-      border-radius: 24px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-      border: 1px solid #1e293b;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid #e2e8f0;
     }
-    .timer-banner {
-      background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%);
-      color: #ffffff;
+    .trust-bar {
+      background: #0f172a;
+      color: #f8fafc;
       text-align: center;
-      padding: 8px 10px;
-      font-size: 13px;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+    }
+    .trust-bar span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .trust-bar i {
+      color: #38bdf8;
+    }
+
+    .timer-banner {
+      background: #fef2f2;
+      color: #991b1b;
+      border-bottom: 1px solid #fecaca;
+      text-align: center;
+      padding: 7px 10px;
+      font-size: 12px;
       font-weight: 700;
       display: flex;
       justify-content: center;
@@ -62,58 +84,49 @@
       gap: 6px;
     }
     .timer-banner span {
-      background: #ffffff;
-      color: #dc2626;
-      padding: 2px 8px;
-      border-radius: 6px;
+      background: #dc2626;
+      color: #ffffff;
+      padding: 2px 7px;
+      border-radius: 4px;
       font-family: monospace;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 800;
     }
+
     .header {
-      background: rgba(15, 23, 42, 0.8);
-      padding: 22px 15px 15px;
+      background: linear-gradient(180deg, #064e3b 0%, #022c22 100%);
+      padding: 20px 15px;
       text-align: center;
-      border-bottom: 1px solid #1e293b;
-    }
-    .brand-badge {
-      display: inline-block;
-      background: rgba(16, 185, 129, 0.1);
-      color: #10b981;
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
+      color: white;
     }
     .brand-title {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 900;
-      color: #ffffff;
+      color: #fbbf24;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 4px;
     }
     .header p {
       font-size: 13px;
-      color: #94a3b8;
+      color: #e2e8f0;
+      font-weight: 500;
     }
-    
+
     .form-box {
+      background: #ffffff;
       padding: 20px;
     }
     .form-title {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 800;
       text-align: center;
-      margin-bottom: 18px;
-      color: #facc15;
-      background: rgba(250, 204, 21, 0.08);
+      margin-bottom: 16px;
+      color: #065f46;
+      background: #ecfdf5;
       padding: 10px;
-      border-radius: 10px;
-      border: 1px dashed rgba(250, 204, 21, 0.3);
+      border-radius: 8px;
+      border: 1px solid #a7f3d0;
     }
     .input-group {
       margin-bottom: 14px;
@@ -123,122 +136,122 @@
       display: block;
       font-size: 12px;
       font-weight: 700;
-      margin-bottom: 6px;
-      color: #cbd5e1;
+      margin-bottom: 5px;
+      color: #334155;
     }
     .input-group input, .input-group select, .input-group textarea {
       width: 100%;
-      padding: 12px;
-      border: 1px solid #334155;
-      border-radius: 10px;
+      padding: 11px 12px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
       font-size: 13.5px;
       outline: none;
-      background: #1e293b;
-      color: #ffffff;
-    }
-    .input-group select {
-      color: #ffffff;
-    }
-    .input-group select option {
-      background: #1e293b;
-      color: #ffffff;
+      background: #f8fafc;
+      color: #0f172a;
+      transition: all 0.2s;
     }
     .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
-      border-color: #10b981;
-      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+      border-color: #059669;
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
     }
     .submit-btn {
       width: 100%;
-      padding: 16px;
-      background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+      padding: 15px;
+      background: linear-gradient(180deg, #059669 0%, #047857 100%);
       color: #ffffff;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 800;
       border: none;
-      border-radius: 12px;
+      border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
       text-transform: uppercase;
-      margin-top: 8px;
+      margin-top: 6px;
       letter-spacing: 0.5px;
     }
 
     .doctor-text {
       font-size: 12px;
-      color: #38bdf8;
+      color: #047857;
       font-weight: 700;
       text-align: center;
       margin-top: 12px;
     }
 
     .product-box {
-      padding: 20px;
+      padding: 18px 20px;
       text-align: center;
-      background: #090d16;
-      border-top: 1px solid #1e293b;
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
     }
     .badge-container {
       display: flex;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .badge {
-      background: rgba(255, 255, 255, 0.05);
-      color: #38bdf8;
+      background: #ffffff;
+      color: #065f46;
       font-weight: 700;
       font-size: 11px;
-      padding: 6px 12px;
-      border-radius: 20px;
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
     }
     .highlights {
-      background: #0f172a;
-      border-left: 4px solid #10b981;
-      padding: 14px;
+      background: #ffffff;
+      border-left: 4px solid #059669;
+      padding: 12px;
       text-align: left;
       font-size: 12.5px;
-      border-radius: 0 10px 10px 0;
-      border: 1px solid #1e293b;
-      border-left: 4px solid #10b981;
+      border-radius: 0 8px 8px 0;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #059669;
     }
     .highlights ul { list-style-type: none; }
-    .highlights li { margin-bottom: 8px; display: flex; align-items: center; gap: 10px; color: #cbd5e1; }
+    .highlights li { margin-bottom: 6px; display: flex; align-items: center; gap: 8px; color: #334155; }
     .highlights li:last-child { margin-bottom: 0; }
-    .highlights li i { color: #10b981; }
+    .highlights li i { color: #059669; }
 
     .footer-note {
       text-align: center;
       font-size: 11px;
       color: #64748b;
-      margin-top: 10px;
+      margin-top: 8px;
     }
     .ads-by {
       font-size: 11px;
-      color: #60a5fa;
+      color: #2563eb;
       font-weight: 700;
       text-align: center;
-      margin-top: 14px;
-      padding-bottom: 5px;
+      margin-top: 12px;
+      padding-bottom: 4px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <div class="trust-bar">
+      <span><i class="fa-solid fa-square-check"></i> AYUSH Standard</span>
+      <span><i class="fa-solid fa-leaf"></i> 100% Herbal</span>
+      <span><i class="fa-solid fa-user-doctor"></i> Doctor Formulated</span>
+    </div>
+
     <div class="timer-banner">
-      <i class="fa-solid fa-clock"></i> Limited Time Offer Ends In: <span id="timer">02:00</span>
+      <i class="fa-solid fa-clock"></i> Free Consultation Offer Ends In: <span id="timer">02:00</span>
     </div>
 
     <div class="header">
-      <div class="brand-badge"><i class="fa-solid fa-shield-halved"></i> AYURVEDIC WELLNESS</div>
       <div class="brand-title">VEDSATHI HERBAL</div>
-      <p>Natural Formula for Kidney & Gallbladder Stone Care</p>
+      <p>Ayurvedic Relief for Kidney & Gallbladder Stone Care</p>
     </div>
 
     <div class="form-box">
-      <div class="form-title">⚡ BOOK FREE CONSULTATION & COD ORDER</div>
+      <div class="form-title">⚡ BOOK FREE CONSULTATION & CASH ON DELIVERY</div>
 
       <form id="vedsathiForm">
         <div class="input-group">
@@ -282,8 +295,8 @@
 
     <div class="product-box">
       <div class="badge-container">
-        <span class="badge"><i class="fa-solid fa-leaf"></i> 100% Herbal</span>
-        <span class="badge"><i class="fa-solid fa-shield-halved"></i> Certified Formula</span>
+        <span class="badge"><i class="fa-solid fa-leaf"></i> Pure Herbs</span>
+        <span class="badge"><i class="fa-solid fa-shield-halved"></i> Quality Checked</span>
         <span class="badge"><i class="fa-solid fa-truck-fast"></i> Cash On Delivery</span>
       </div>
 
