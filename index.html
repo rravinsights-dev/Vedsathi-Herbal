@@ -39,7 +39,7 @@
     .input-group label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 5px; color: #334155; }
     .input-group input, .input-group textarea { width: 100%; padding: 11px 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 13.5px; outline: none; background: #f8fafc; color: #0f172a; }
     .input-group input:focus, .input-group textarea:focus { border-color: #059669; background: #ffffff; box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12); }
-    .submit-btn { width: 100%; padding: 15px; background: linear-gradient(180deg, #059669 0%, #047857 100%); color: #ffffff; font-size: 16px; font-weight: 800; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25); text-transform: uppercase; margin-top: 6px; }
+    .submit-btn { width: 100%; padding: 15px; background: linear-gradient(180deg, #008751 0%, #006838 100%); color: #ffffff; font-size: 16px; font-weight: 800; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 135, 81, 0.35); text-transform: uppercase; margin-top: 6px; }
     .submit-btn:disabled { background: #94a3b8 !important; cursor: not-allowed; box-shadow: none; }
     .doctor-text { font-size: 12px; color: #047857; font-weight: 700; text-align: center; margin-top: 12px; }
     .product-box { padding: 18px 20px; text-align: center; background: #f8fafc; border-top: 1px solid #e2e8f0; }
@@ -57,7 +57,7 @@
 
   <div class="container">
     <div class="timer-banner">
-      <i class="fa-solid fa-clock"></i> Special Discount Ends In: <span id="timer">00:40</span>
+      <i class="fa-solid fa-clock"></i> Special Discount Ends In: <span id="timer">02:00</span>
     </div>
 
     <div class="header">
@@ -123,13 +123,13 @@
   </div>
 
   <script>
-    let timeInSeconds = 40;
+    let timeInSeconds = 120;
     const timerElement = document.getElementById('timer');
     function updateTimer() {
       const minutes = Math.floor(timeInSeconds / 60);
       const seconds = Math.floor(timeInSeconds % 60);
       timerElement.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-      if (timeInSeconds > 0) { timeInSeconds--; } else { timeInSeconds = 40; }
+      if (timeInSeconds > 0) { timeInSeconds--; } else { timeInSeconds = 120; }
     }
     setInterval(updateTimer, 1000);
 
