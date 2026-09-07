@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You - Vedsathi Herbal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-  <!-- Meta Pixel Code -->
+  
+  <!-- Meta Pixel Event Lead Tracking -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,148 +17,46 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    fbq('init', '1479738403994180'); // Aapki Pixel ID
+    fbq('init', '1479738403994180');
     fbq('track', 'PageView');
-    fbq('track', 'Lead'); // Conversion Tracking Event
+    fbq('track', 'Lead');
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1479738403994180&ev=PageView&noscript=1"
   /></noscript>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    body {
-      background-color: #f1f5f9;
-      color: #1e293b;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-    }
-    .card {
-      background: #ffffff;
-      max-width: 440px;
-      width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
-      border: 1px solid #e2e8f0;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    .icon-box {
-      width: 70px;
-      height: 70px;
-      background: #ecfdf5;
-      color: #059669;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 18px;
-      font-size: 32px;
-      border: 2px solid #a7f3d0;
-    }
-    h1 {
-      font-size: 22px;
-      color: #065f46;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-    p {
-      font-size: 13.5px;
-      color: #475569;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .info-box {
-      background: #f8fafc;
-      border: 1px dashed #cbd5e1;
-      border-radius: 10px;
-      padding: 14px;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-    .info-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 12.5px;
-      color: #334155;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    .info-item:last-child {
-      margin-bottom: 0;
-    }
-    .info-item i {
-      color: #059669;
-    }
-    .whatsapp-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 14px;
-      background: #25D366;
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 800;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-      text-transform: uppercase;
-      transition: background 0.2s ease;
-    }
-    .whatsapp-btn:hover {
-      background: #1eb956;
-    }
-    .ads-by {
-      font-size: 11px;
-      color: #2563eb;
-      font-weight: 700;
-      margin-top: 18px;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: #f1f5f9; color: #0f172a; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 15px; }
+    .card { background: #ffffff; max-width: 440px; width: 100%; border-radius: 16px; padding: 32px 24px; text-align: center; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
+    .icon-circle { width: 56px; height: 56px; background-color: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+    .icon-circle i { color: #ffffff; font-size: 26px; }
+    h1 { font-size: 20px; font-weight: 800; color: #065f46; margin-bottom: 12px; line-height: 1.35; }
+    p.desc { font-size: 13px; color: #475569; line-weight: 1.5; margin-bottom: 20px; }
+    .info-box { background: #ecfdf5; border: 1.5px dashed #059669; border-radius: 8px; padding: 12px; font-size: 13px; font-weight: 700; color: #065f46; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; }
+    .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25d366; color: #ffffff; font-size: 16px; font-weight: 800; text-decoration: none; padding: 14px 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); transition: transform 0.2s; }
+    .whatsapp-btn:active { transform: scale(0.98); }
+    .whatsapp-btn i { font-size: 22px; }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <div class="icon-box">
-      <i class="fa-solid fa-circle-check"></i>
+    <div class="icon-circle">
+      <i class="fa-solid fa-check"></i>
     </div>
 
-    <h1>Aapka Form Submit Ho Gaya Hai!</h1>
-    <p>Humari Medical Expert Team aapki details review kar rahi hai. Fast Response ke liye aap hume seedhe WhatsApp par message kar sakte hain.</p>
+    <h1>Aapki Doctor Call Consultation Booking Successfully Ho Gayi Hai!</h1>
+
+    <p class="desc">Humare Ayurvedic Expert Doctor jald se jald aapko consultation aur kit ki jaankari ke liye contact karenge.</p>
 
     <div class="info-box">
-      <div class="info-item">
-        <i class="fa-solid fa-phone-volume"></i>
-        <span>Expert Call Within 24 Hours</span>
-      </div>
-      <div class="info-item">
-        <i class="fa-solid fa-user-doctor"></i>
-        <span>Free Doctor Consultation</span>
-      </div>
-      <div class="info-item">
-        <i class="fa-solid fa-truck-fast"></i>
-        <span>Cash On Delivery Available</span>
-      </div>
+      <i class="fa-solid fa-clock"></i> Expected Call Time: 15 - 30 Minutes
     </div>
 
-    <!-- WhatsApp Button with Number 8750561620 -->
-    <a href="https://wa.me/918750561620?text=Namaste%20Vedsathi%20Herbal,%20maine%20form%20fill%20kiya%20hai.%20Mujhe%20consultation%20chahiye." target="_blank" class="whatsapp-btn">
-      <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> WHATSAPP PAR BAAT KAREIN
+    <a href="https://wa.me/918750561620?text=Namaste%2C%20maine%20Vedsathi%20Herbal%20par%20form%20submit%20kiya%20hai.%20Mujhe%20jaankari%20chahiye." class="whatsapp-btn">
+      <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Chat
     </a>
-
-    <div class="ads-by">Ads by Theadsguru Advertising and Marketing Agency</div>
   </div>
 
 </body>
