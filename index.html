@@ -90,7 +90,7 @@
         </div>
 
         <button type="submit" class="submit-btn" id="subBtn">
-          SUBMIT NOW
+          ORDER NOW (CASH ON DELIVERY)
         </button>
       </form>
 
@@ -159,7 +159,7 @@
         .catch(error => {
           localStorage.removeItem('last_vedsathi_submit_time');
           alert('Details submit karne me issue aaya, please firse try karein.');
-          btn.innerText = 'SUBMIT NOW';
+          btn.innerText = 'ORDER NOW (CASH ON DELIVERY)';
           btn.disabled = false;
         });
     });
