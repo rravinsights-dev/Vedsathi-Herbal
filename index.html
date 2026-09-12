@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vedsathi Herbal - Kidney & GB Stone Care</title>
+  <title>Vedsathi Herbal - Nutrivedá Protein Powder</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <!-- Meta Pixel Code -->
@@ -13,7 +13,7 @@
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
+    t.src=v;s=b.getElementsByTagName(s)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
@@ -33,6 +33,7 @@
     .header { background: linear-gradient(180deg, #064e3b 0%, #022c22 100%); padding: 20px 15px; text-align: center; color: white; }
     .brand-title { font-size: 24px; font-weight: 900; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
     .header p { font-size: 13px; color: #e2e8f0; font-weight: 500; }
+    .price-tag { display: inline-block; background: #fbbf24; color: #022c22; font-weight: 900; font-size: 14px; padding: 4px 12px; border-radius: 20px; margin-top: 8px; }
     .form-box { background: #ffffff; padding: 20px; }
     .form-title { font-size: 13.5px; font-weight: 800; text-align: center; margin-bottom: 16px; color: #065f46; background: #ecfdf5; padding: 10px; border-radius: 8px; border: 1px solid #a7f3d0; }
     .input-group { margin-bottom: 14px; text-align: left; }
@@ -57,16 +58,17 @@
 
   <div class="container">
     <div class="timer-banner">
-      <i class="fa-solid fa-clock"></i> Special Discount Ends In: <span id="timer">02:00</span>
+      <i class="fa-solid fa-clock"></i> Special Offer Ends In: <span id="timer">02:00</span>
     </div>
 
     <div class="header">
       <div class="brand-title">VEDSATHI HERBAL</div>
-      <p>Specialized Ayurvedic Care for Kidney & GB Stone</p>
+      <p>Nutrivedá Protein Powder - Ayurvedic Herbal Nutrition</p>
+      <div class="price-tag">Special Price: ₹799 Only</div>
     </div>
 
     <div class="form-box">
-      <div class="form-title">⚡ ORDER NOW (CASH ON DELIVERY)</div>
+      <div class="form-title">⚡ FILL DETAILS TO GET CALL & FREE CONSULTATION</div>
 
       <form id="vedsathiForm">
         <div class="input-group">
@@ -90,12 +92,12 @@
         </div>
 
         <button type="submit" class="submit-btn" id="subBtn">
-          ORDER NOW (CASH ON DELIVERY)
+          SUBMIT NOW
         </button>
       </form>
 
       <div class="doctor-text">
-        <i class="fa-solid fa-user-doctor"></i> Our Expert doctors will contact you
+        <i class="fa-solid fa-user-doctor"></i> Our Health Experts will contact you
       </div>
 
       <div class="footer-note">
@@ -106,15 +108,16 @@
     <div class="product-box">
       <div class="badge-container">
         <span class="badge"><i class="fa-solid fa-leaf"></i> 100% Ayurvedic</span>
-        <span class="badge"><i class="fa-solid fa-shield-halved"></i> No Side Effects</span>
-        <span class="badge"><i class="fa-solid fa-truck-fast"></i> Cash On Delivery</span>
+        <span class="badge"><i class="fa-solid fa-vial-circle-check"></i> Lab Tested For Purity</span>
+        <span class="badge"><i class="fa-solid fa-ban"></i> No Added Sugar</span>
       </div>
 
       <div class="highlights">
         <ul>
-          <li><i class="fa-solid fa-circle-check"></i> <b>Vedsathi Stone-Off Syrup:</b> Gallbladder & Liver Support</li>
-          <li><i class="fa-solid fa-circle-check"></i> <b>Herbal Care Capsules:</b> Natural Detox & Cleanse</li>
-          <li><i class="fa-solid fa-circle-check"></i> <b>Digestive Detox Churna:</b> Acidity & Digestion Reliever</li>
+          <li><i class="fa-solid fa-circle-check"></i> <b>Muscle Gain & Strength:</b> Helps build natural lean muscle</li>
+          <li><i class="fa-solid fa-circle-check"></i> <b>Stamina & Energy Boost:</b> Keeps you energetic all day</li>
+          <li><i class="fa-solid fa-circle-check"></i> <b>Natural Ayurvedic Herbs:</b> Enriched with Ashwagandha, Safed Musli, Shatavari & Amla</li>
+          <li><i class="fa-solid fa-circle-check"></i> <b>Safe & Pure:</b> Zero harmful chemicals, completely safe for daily use</li>
         </ul>
       </div>
 
@@ -159,7 +162,7 @@
         .catch(error => {
           localStorage.removeItem('last_vedsathi_submit_time');
           alert('Details submit karne me issue aaya, please firse try karein.');
-          btn.innerText = 'ORDER NOW (CASH ON DELIVERY)';
+          btn.innerText = 'SUBMIT NOW';
           btn.disabled = false;
         });
     });
